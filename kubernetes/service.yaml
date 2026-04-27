@@ -1,0 +1,17 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: raspberry
+  namespace: raspberry
+  labels:
+    app: raspberry
+spec:
+  type: ClusterIP
+  selector:
+    app: raspberry
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
