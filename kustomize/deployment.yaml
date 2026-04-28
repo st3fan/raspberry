@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: raspberry
-          image: ghcr.io/st3fan/raspberry:latest
+          image: ghcr.io/st3fan/raspberry:sha-ba30dc3
           ports:
             - name: http
               containerPort: 80
