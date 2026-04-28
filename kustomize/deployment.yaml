@@ -1,0 +1,24 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: raspberry
+  labels:
+    app: raspberry
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: raspberry
+  template:
+    metadata:
+      labels:
+        app: raspberry
+    spec:
+      containers:
+        - name: raspberry
+          image: ghcr.io/st3fan/raspberry:latest
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
