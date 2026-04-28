@@ -16,6 +16,12 @@
     img {
       max-width: 100%;
       max-height: 100%;
+      animation: spin 30s linear infinite;
+      transform-origin: 50% 59%;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
     }
   </style>
 </head>
