@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: raspberry
-          image: ghcr.io/st3fan/raspberry@sha256:188ebe95c11cf46dab9fa477cc8b78617d6ea3dc258ad9c56c3476cd6e965bfd
+          image: docker pull ghcr.io/st3fan/raspberry@sha256:b7cec8ad0b7a9e25ee46442fe41aa68d126418dfac9b64f89d740059ac81e260
           ports:
             - name: http
               containerPort: 80
